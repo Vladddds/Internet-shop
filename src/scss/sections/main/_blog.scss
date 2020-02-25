@@ -1,0 +1,139 @@
+.blog {
+
+	&-heading {
+		padding-bottom: 12px;
+		margin-bottom: 34px;
+		border-bottom: 3px solid #e2e2e2;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			width: 44px;
+			height: 3px;
+			background-color: $accent-color;
+		}
+
+		&__title {
+			font-size: 20px;
+			color: $accent-color;
+
+		}
+	}
+
+	&-item {
+		padding: 230px 30px 30px;
+		min-height: 540px;
+		max-width: 360px;
+		background-size: auto 290px;
+
+		&--1 {
+			background: url('../img/blog/1.jpg') no-repeat right top;
+		}
+
+		&--2 {
+			background: url('../img/blog/2.jpg') no-repeat right top;
+		}
+
+		&--3 {
+			background: url('../img/blog/3.jpg') no-repeat right top;
+		}
+	}
+
+
+	&-content {
+		background-color: white;
+
+		&-header {
+			padding: 30px;
+			font-size: 13px;
+			margin-bottom: 15px;
+
+			& i {
+				font-size: 15px;
+				color: black !important;
+			}
+		}
+
+		&-main {
+			padding: 0 5px;
+
+			&__heading {
+				color: $accent-color;
+				font-size: 16px;
+			}
+
+			&__text {
+				font-size: 14px;
+				margin-bottom: 37px !important;
+			}
+
+			&__button {
+				min-width: 165px;
+				color: white !important;
+				background-color: $accent-color !important;
+			}
+		}
+	}
+}
+
+.carousel-controls {
+	justify-content: space-between;
+	right: 0;
+	background-color: white;
+
+	&--mobile {
+		padding-left: 5px;
+		bottom: -15px;
+		min-width: 71px;
+	}
+
+	&--tablet {
+		min-width: 100px;
+		top: -57px;
+	}
+}
+
+.square-button--control {
+	width: 30px;
+	height: 30px;
+	position: static;
+	color: black;
+
+	&:hover, :active {
+		color: $accent-color;
+		border-color: $accent-color;
+	}
+}
+
+.carousel-control {
+	text-decoration: none;
+	color: black;
+
+	&:hover, :active {
+		text-decoration: none;
+	}
+}
+
+.blog-carousel-indicators {
+	position: static;
+	margin-top: 5px;
+	margin-left: 15px;
+
+	&__item {
+		width: 13px !important;
+		height: 13px !important;
+		border-radius: 50%;
+		background-color: #e2e2e2 !important;
+
+
+		&:hover, &:active {
+			background-color: $accent-color !important;
+		}
+	}
+}
+
+.blog-carousel-indicators__item.active {
+	background-color: $accent-color !important;
+}

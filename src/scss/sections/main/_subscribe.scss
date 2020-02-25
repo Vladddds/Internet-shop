@@ -1,0 +1,86 @@
+.subscribe {
+	background: #f2f2f2;
+
+	&__heading {
+		color: $accent-color;
+		font-size: 22px;
+	}
+
+	&-form {
+		position: relative;
+
+		&__input {
+			width: 80%;
+			border: none;
+			border-radius: 3px;
+			padding: 12px 0 12px 40px;
+			font-size: 14px;
+
+			&::placeholder {
+				font-size: 12px;
+			}
+
+			
+			@media (min-width: $media-phone) {
+				width: 85%;
+				min-width: 372px;
+				padding-left: 50px;
+			}
+
+			@media (min-width: $media-tablet) {
+				min-width: 420px;
+				padding-left: 67px;
+			}
+		}
+
+		&-label {
+			position: relative;
+			left: 5%;
+			bottom: 4px;
+
+			@media (min-width: 576px) {
+				bottom: 0;
+				//left: 7%;
+			}
+
+			@media (min-width: $media-tablet) {
+				left: 6%;
+			}
+
+			&:before {
+				content: '\f0e0';
+				position: absolute;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: 16px;
+				color: $accent-color;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				height: 18px;
+				width: 1px;
+				background-color: #bfbfbf;
+				left: 22px;
+			}
+		}
+
+
+
+		&__button {
+			font-size: 16px;
+			color: $accent-color;
+			padding: 10px 15px 9px;
+		}
+
+
+	}
+
+
+
+	&-wrapper {
+		width: 100%;
+		max-width: 746px;
+		padding: 37px 0;
+	}
+}

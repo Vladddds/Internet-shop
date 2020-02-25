@@ -1,0 +1,14 @@
+@import "vars";
+@import "mixins";
+
+@import "./components/components";
+@import "sections/sections";
+@import "modals/modals";
+
+.page-wrapper {
+	font-family: $poppins;
+
+}
+a {
+	color: inherit;
+}

@@ -1,0 +1,51 @@
+.header-menu {
+  width: 100%;
+  background-color: $lighter-gray;
+    &-left {
+      font-size: 11px;
+      @media (min-width: $media-phone) {
+        font-size: 13px;
+      }
+      &__item:not(:first-child) {
+        margin-left: 12px;
+        @media (min-width: $media-phone) {
+          margin-left: 30px;
+        }
+      }
+      &__link:hover {
+        border-bottom: 1px solid white;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  &-right {
+    font-size: 11px;
+    @media (min-width: $media-phone) {
+      font-size: 13px;
+    }
+    &__login {
+      margin-right: 10px;
+      @media (min-width: $media-phone) {
+        margin-right: 33px;
+      }
+      &-icon {
+        font-size: 16px;
+        margin-right: 9px;
+        vertical-align: text-bottom;
+      }
+    }
+    &__register {
+      &-icon {
+        font-size: 16px;
+        margin-right: 9px;
+        vertical-align: text-bottom;
+      }
+    }
+    &__link:hover {
+      border-bottom: 1px solid white;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}

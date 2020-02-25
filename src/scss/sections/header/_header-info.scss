@@ -1,0 +1,87 @@
+.header-info {
+  width: 100%;
+  background-color: $darker-gray;
+    &-left {
+      &__icon {
+        display: none;
+        @media (min-width: $media-tablet) {
+          display: inline-block;
+          font-size: 44px;
+          color: #d58e32;
+          margin-right: 13px;
+        }
+      }
+      &__phone {
+        font-size: 11px;
+        @media (min-width: $media-phone) {
+          font-size: 15px;
+        }
+      }
+      &__link:hover {
+        border-bottom: 1px solid white;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  &-center {
+    padding-top: 27px;
+    padding-bottom: 38px;
+    @media (min-width: $media-phone) {
+      padding-top: 38px;
+      padding-bottom: 54px;
+    }
+    @media (min-width: $media-tablet) {
+      padding-top: 34px;
+      padding-bottom: 34px;
+    }
+    &__logo {
+      width: 80px;
+      height: 37px;
+      @media (min-width: $media-phone) {
+        width: 114px;
+        height: 53px;
+      }
+      @media (min-width: $media-tablet) {
+        width: 165px;
+        height: 77px;
+      }
+    }
+  }
+  &-right {
+    &__cart {
+      font-size: 13px;
+      padding: 8px 11px 8px 6px;
+      background-color: #d58e32;
+      border-radius: 2px;
+      @media (min-width: $media-phone) {
+      font-size: 17px;
+      padding: 11px 16px 11px 9px;
+      }
+      @media (min-width: $media-tablet) {
+        font-size: 20px;
+        padding: 14px 16px 14px 12px;
+      }
+    }
+    &__cart-link {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+
+    &__count {
+      font-size: 11px;
+      background-color: $darker-gray;
+      border-radius: 50%;
+      margin-left: -10px;
+      padding: 3px 6px;
+      @media (min-width: $media-phone) {
+      font-size: 14px;
+      padding: 4px 8px;
+        margin-left: -12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,333 @@
+.gallery {
+  &__heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $accent-color;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+
+    &:before {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      width: 44px;
+      border-bottom: 3px solid $accent-color;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+
+    }
+
+    &:after {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      border-bottom: 3px solid lightgrey;
+      bottom: -1px;
+      left: 0;
+    }
+  }
+
+  &__tabs {
+    border-bottom: none;
+    justify-content: stretch;
+    @media (max-width: $media-tablet) {
+      display: none !important;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: stretch;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    &-link {
+      flex-grow: 1;
+      font-size: 14px;
+      border: 1px solid #b1b1b154;
+      border-right: none;
+      padding: 16px 18px;
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+
+      &--rated {
+        border-right: 1px solid #b1b1b154;
+      }
+    }
+
+  }
+
+  &__carousel-item {
+    width: 100%;
+    height: 272px;
+    @media (min-width: $media-phone) {
+      height: 454px;
+    }
+    background-color: #f4f5f7;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    @media (min-width: $media-tablet) {
+      justify-content: center !important;
+    }
+  }
+  &__banner {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #e8edf7;
+    background-image: url("../img/gallery-bedroom.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    display: none;
+    @media (min-width: 992px) {
+      display: flex;
+    }
+    &-price {
+      margin-top: 70px;
+      margin-left: 62px;
+      font-size: 24px;
+      font-weight: 600;
+      color: black;
+      text-transform: uppercase;
+      margin-bottom: 23px;
+      &--highlight {
+        font-size: 48px;
+        color: #79ae30;
+        font-weight: 600;
+      }
+    }
+    &-name {
+      font-size: 48px;
+      color: $accent-color;
+      margin-left: 62px;
+      font-weight: 600;
+      margin-bottom: 35px;
+    }
+    &-button {
+      width: 136px;
+      font-size: 14px;
+      padding: 21px 32px;
+      margin-left: 62px;
+      background-color: #79ae30;
+    }
+  }
+}
+
+.carousel-item {
+  &__icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $media-tablet) {
+      position: absolute;
+      left: 0;
+      top: 30%;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+
+    &:hover {
+      border-color: $accent-color;
+      color: $accent-color;
+    }
+  }
+
+  &__image {
+    width: 232px;
+    height: auto;
+    @media (min-width: $media-phone) {
+      width: 388px;
+    }
+    @media (min-width: $media-tablet) {
+      width: 532px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 22px;
+    left: 143px;
+    background-color: white;
+    width: 249px;
+    height: 106px;
+    @media (max-width: 479px) {
+      width: 150px;
+      height: 63px;
+      bottom: 10px;
+      left: 95px;
+    }
+    @media (min-width: $media-tablet) {
+      left: unset;
+      right: 0;
+      bottom: 75px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 14px solid transparent;
+      border-left: 14px solid black;
+      border-top: 14px solid black;
+      z-index: 2;
+      @media (max-width: 479px) {
+        border: 8px solid transparent;
+        border-left: 8px solid black;
+        border-top: 8px solid black;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border: 14px solid transparent;
+      border-right: 14px solid black;
+      border-bottom: 14px solid black;
+      z-index: 2;
+      @media (max-width: 479px) {
+        border: 8px solid transparent;
+        border-right: 8px solid black;
+        border-bottom: 8px solid black;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    @media (max-width: 479px) {
+      font-size: 12px;
+    }
+  }
+
+  &__icons-block {
+    font-size: 16px;
+    @media (max-width: 479px) {
+      font-size: 12px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:hover .square-button {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.price-circle {
+  display: flex;
+  flex-direction: column;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: #7b7b7c;
+  position: absolute;
+  bottom: 22px;
+  left: 65px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0.6;
+  @media (max-width: 479px) {
+    width: 63px;
+    height: 63px;
+    bottom: 10px;
+    left: 44px;
+  }
+  @media (min-width: $media-tablet) {
+    left: unset;
+    right: 62px;
+    bottom: 162px;
+  }
+
+  &__price {
+    &--new {
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      @media (max-width: 479px) {
+        font-size: 14px;
+      }
+    }
+
+    &--old {
+      font-size: 16px;
+      color: white;
+      text-decoration: line-through;
+      @media (max-width: 479px) {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+
+.square-button {
+  margin: 10px 15px;
+  background-color: transparent;
+
+  @media (max-width: 479px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.active:focus {
+  color: $accent-color !important;
+  border-top: 3px solid $accent-color !important;
+  text-decoration: none;
+  background-color: #f4f5f7;
+}
+
+
+//tooltip
+
+.tooltip {
+  position: absolute;
+  z-index: 999;
+  left: -9999px;
+  background-color: #dedede;
+  padding: 5px;
+  border: 1px solid #fff;
+  width: auto;
+}
+
+.tooltip p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #222;
+  padding: 2px 7px;
+}
+
+
+.thumbs-check {
+  position: absolute;
+}

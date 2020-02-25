@@ -1,0 +1,100 @@
+<header class="header">
+  <div class="header-menu">
+    <div class="container">
+      <div class="row text-white">
+        <div class="header-menu-left col-6 py-4">
+          <span class="header-menu-left__item">USD</span>
+          <span class="header-menu-left__item">English</span>
+          <span class="header-menu-left__item"><a class="header-menu-left__link" href="#">Help</a></span>
+        </div>
+        <div class="header-menu-right col-6 d-flex justify-content-end py-4">
+          <div class="header-menu-right__login">
+            <i class="header-menu-right__login-icon fa fa-user"></i>
+            <span><a class="header-menu-right__link" data-toggle="modal" data-target="#loginModal">Login</a></span>
+          </div>
+          <div class="header-menu-right__register">
+            <i class="header-menu-right__register-icon fa fa-lock"></i>
+            <span><a class="header-menu-right__link" data-toggle="modal"
+                     data-target="#registerModal">Register</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-info">
+    <div class="container">
+      <div class="row text-white">
+        <div class="header-info-left col-5 d-flex justify-content-start align-items-center">
+          <i class="header-info-left__icon fa fa-mobile"></i>
+          <span class="header-info-left__phone"><a class="header-info-left__link"
+                                                   href="#">2300 - 3560 - 222</a></span>
+        </div>
+        <div class="header-info-center col-2 d-flex justify-content-center align-items-center">
+          <img class="header-info-center__logo" src="./img/main-logo.png" alt="logo-bazar">
+        </div>
+        <div class="header-info-right col-5 d-flex justify-content-end align-items-center">
+          <div>
+            <a class="header-info-right__cart-link" href="#cartModal" data-toggle="modal"
+               data-target="#cartModal" id="cart-btn"><i class="header-info-right__cart fa fa-shopping-basket"></i></a>
+            <span class="header-info-right__count" id="cart-counter">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-navbar">
+    <div class="container">
+      <div class="row">
+        <div class="header-navbar__search-part col-6 d-flex align-items-center">
+          <form class="header-navbar__form form-inline" action="/action_page.php">
+            <div class="header-navbar__search-wrapper">
+              <input class="header-navbar__search form-control mr-sm-2" type="text"
+                     placeholder="Search products...">
+              <i class="header-navbar__icon-search fa fa-search" aria-hidden="true"></i>
+            </div>
+            <!--                    <button class="btn btn-success" type="submit">Search</button>-->
+          </form>
+        </div>
+        <div class="header-navbar__navbar-top col-6">
+          <div class="header-navbar__wrapper d-flex justify-content-end">
+            <div id="nav-icon1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="header-navbar__list-wrapper">
+              <ul class="header-navbar__list list-unstyled">
+                <li class="header-navbar__list-item">
+                  <a class="header-navbar__link dropdown-item" href="#">Home</a>
+                </li>
+                <div class="header-navbar__divider dropdown-divider"></div>
+                <li class="header-navbar__list-item">
+                  <a class="header-navbar__link dropdown-item" href="#top-slider">Slider</a>
+                </li>
+                <li class="header-navbar__list-item">
+                  <a class="header-navbar__link dropdown-item" href="#features">Features</a>
+                </li>
+                <li class="header-navbar__list-item">
+                  <a class="header-navbar__link dropdown-item" href="#banners">Stocks</a>
+                </li>
+                <li class="header-navbar__list-item">
+                  <a class="header-navbar__link dropdown-item" href="#products">Products</a>
+                </li>
+                <li class="header-navbar__list-item">
+                  <a class="header-navbar__link dropdown-item" href="#gallery">Gallery</a>
+                </li>
+                <li class="header-navbar__list-item">
+                  <a class="header-navbar__link dropdown-item" href="#blog">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>

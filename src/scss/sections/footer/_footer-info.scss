@@ -1,0 +1,49 @@
+.footer-info {
+	padding: 60px 0;
+	background-color: $darker-gray;
+}
+
+.footer-item__heading {
+	font-size: 16px;
+	margin-bottom: 35px;
+
+	@media (min-width: 480px) {
+		font-size: 22px;
+	}
+}
+
+.footer-menu {
+	&:not(:last-child) {
+		margin-bottom: 42px;
+	}
+
+	&__item {
+		margin-bottom: 12px;
+	}
+}
+
+.footer-menu__link {
+	color: #a9a9a9;
+	font-size: 14px;
+
+
+	&:hover {
+		color: #a9a9a9;
+	}
+}
+
+.payments {
+	flex-wrap: wrap;
+
+
+	&-item {
+		margin-top: 14px;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+
+}
+

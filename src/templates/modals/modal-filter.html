@@ -1,0 +1,371 @@
+<div class="modal fade" id="filters-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content position-relative">
+      <button type="button" class="modal-close btn btn-dark rounded-0" data-dismiss="modal"
+              aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="container">
+        <aside class="filters filters--modal text-dark ">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-12">
+              <div class="filter-item filter-item--modal">
+                <h3 class="filter-item__heading text-uppercase pb-3 position-relative font-weight-bold">
+                  Filter By categories
+                </h3>
+
+                <div class="filter-categories">
+                  <ul class="filter-categories-list list-unstyled">
+                    <li class="filter-categories-item">
+                      <input type="checkbox" class="default-checkbox categories-checkbox"
+                             id="m-categories-furniture">
+                      <label for="m-categories-furniture"
+                             class="filter-categories-label d-flex justify-content-between">
+                            <span class="filter-categories-label__text">
+                                <i class="fa fa-chevron-right filter-categories-label__icon"></i>
+                                Furniture
+                            </span>
+                        <span class="filters-quantity bg-dark rounded-circle text-center text-white">3</span>
+                      </label>
+                    </li>
+
+                    <li class="filter-categories-item">
+                      <input type="checkbox" class="default-checkbox categories-checkbox" id="m-categories-sofa">
+                      <label for="m-categories-sofa" class="filter-categories-label d-flex justify-content-between">
+                            <span class="filter-categories-label__text">
+                                <i class="fa fa-chevron-right filter-categories-label__icon"></i>
+                                Sofa
+                            </span>
+                        <span class="filters-quantity bg-dark rounded-circle text-center text-white">4</span>
+                      </label>
+                    </li>
+
+                    <li class="filter-categories-item">
+                      <input type="checkbox" class="default-checkbox categories-checkbox" id="m-categories-chair">
+                      <label for="m-categories-chair"
+                             class="filter-categories-label d-flex justify-content-between">
+                            <span class="filter-categories-label__text">
+                                <i class="fa fa-chevron-right filter-categories-label__icon"></i>
+                                Chair
+                            </span>
+                        <span class="filters-quantity bg-dark rounded-circle text-center text-white">5</span>
+                      </label>
+                    </li>
+
+                    <li class="filter-categories-item">
+                      <input type="checkbox" class="default-checkbox categories-checkbox" id="m-categories-table">
+                      <label for="m-categories-table"
+                             class="filter-categories-label d-flex justify-content-between">
+                            <span class="filter-categories-label__text">
+                                <i class="fa fa-chevron-right filter-categories-label__icon"></i>
+                                Table
+                            </span>
+                        <span class="filters-quantity bg-dark rounded-circle text-center text-white">5
+                            </span>
+                      </label>
+                    </li>
+
+                    <li class="filter-categories-item">
+                      <input type="checkbox" class="default-checkbox categories-checkbox" id="m-categories-bedroom">
+                      <label for="m-categories-bedroom"
+                             class="filter-categories-label d-flex justify-content-between">
+                            <span class="filter-categories-label__text">
+                                <i class="fa fa-chevron-right filter-categories-label__icon"></i>
+                                Bedroom
+                            </span>
+                        <span class="filters-quantity bg-dark rounded-circle text-center text-white">5</span>
+                      </label>
+                    </li>
+
+
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-12">
+
+              <div class="filter-item filter-item--modal">
+                <h3 class="filter-item__heading text-uppercase pb-3 position-relative font-weight-bold">
+                  Filter By Price
+                </h3>
+                <div class="filter-item">
+                  <div class="filter-price">
+                    <div id="m-slider-range" class="mb-4"></div>
+
+                    <div class="price-wrapper d-flex justify-content-between">
+                      <button class="filter-price__button border-0 rounded-0 text-uppercase text-white">Filter
+                      </button>
+                      <input class='filter-price__value' type="text" id="m-amount" readonly>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-12">
+              <div class="filter-item filter-item--modal">
+                <h3 class="filter-item__heading text-uppercase pb-3 position-relative font-weight-bold">
+                  Filter By Color
+                </h3>
+
+                <ul class="filter-colors-list list-unstyled">
+
+                  <li class="filter-colors-item">
+                    <input type="checkbox" class="default-checkbox colors-checkbox" id="m-color-red">
+                    <label for="m-color-red" class="filter-colors-label">
+                            <span class="filter-colors-checkbox filter-colors-checkbox--red text-center mr-2 rounded">
+                                <i class="fa fa-check filter-colors-checkbox__tick text-white"></i>
+                            </span>
+                      <span class="filter-colors-label__text">
+                                Red
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-colors-item">
+                    <input type="checkbox" class="default-checkbox colors-checkbox" id="m-color-black">
+                    <label for="m-color-black" class="filter-colors-label">
+                            <span class="filter-colors-checkbox filter-colors-checkbox--black text-center mr-2 rounded">
+                                <i class="fa fa-check filter-colors-checkbox__tick text-white"></i>
+                            </span>
+                      <span class="filter-colors-label__text">
+                                Black
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-colors-item">
+                    <input type="checkbox" class="default-checkbox colors-checkbox" id="m-color-yellow">
+                    <label for="m-color-yellow" class="filter-colors-label">
+                            <span
+                                    class="filter-colors-checkbox filter-colors-checkbox--yellow text-center mr-2 rounded">
+                                <i class="fa fa-check filter-colors-checkbox__tick text-white"></i>
+                            </span>
+                      <span class="filter-colors-label__text">
+                                Yellow
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-colors-item">
+                    <input type="checkbox" class="default-checkbox colors-checkbox" id="m-color-blue">
+                    <label for="m-color-blue" class="filter-colors-label">
+                            <span class="filter-colors-checkbox filter-colors-checkbox--blue text-center mr-2 rounded">
+                                <i class="fa fa-check filter-colors-checkbox__tick text-white"></i>
+                            </span>
+                      <span class="filter-colors-label__text">
+                                Blue
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-colors-item">
+                    <input type="checkbox" class="default-checkbox colors-checkbox" id="m-color-pink">
+                    <label for="m-color-pink" class="filter-colors-label">
+                            <span class="filter-colors-checkbox filter-colors-checkbox--pink text-center mr-2 rounded">
+                                <i class="fa fa-check filter-colors-checkbox__tick text-white"></i>
+                            </span>
+                      <span class="filter-colors-label__text">
+                                Pink
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-colors-item">
+                    <input type="checkbox" class="default-checkbox colors-checkbox" id="m-color-green">
+                    <label for="m-color-green" class="filter-colors-label">
+                            <span class="filter-colors-checkbox filter-colors-checkbox--green text-center mr-2 rounded">
+                                <i class="fa fa-check filter-colors-checkbox__tick text-white"></i>
+                            </span>
+                      <span class="filter-colors-label__text">
+                                Green
+                            </span>
+                    </label>
+                  </li>
+
+
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-12">
+              <div class="filter-item filter-item--modal">
+                <h3 class="filter-item__heading text-uppercase pb-3 position-relative font-weight-bold">
+                  Filter By size
+                </h3>
+
+                <ul class="filter-size-list list-unstyled">
+
+                  <li class="filter-size-item">
+                    <input type="checkbox" class="default-checkbox size-checkbox" id="m-size-s">
+                    <label for="m-size-s" class="filter-size-label d-flex justify-content-between">
+                            <span class="size-label-inner-wrapper">
+                                <span class="filter-size-checkbox text-center mr-2 rounded border border-dark ">
+                                    <i class="fa fa-check filter-size-checkbox__tick text-white"></i>
+                                </span>
+                                <span class="filter-size-label__text">
+                                    S
+                                </span>
+                            </span>
+
+                      <span class="filters-quantity bg-dark rounded-circle text-center text-white">3</span>
+                    </label>
+                  </li>
+
+                  <li class="filter-size-item">
+                    <input type="checkbox" class="default-checkbox size-checkbox" id="m-size-m">
+                    <label for="m-size-m" class="filter-size-label d-flex justify-content-between">
+                            <span class="size-label-inner-wrapper">
+                                <span class="filter-size-checkbox text-center mr-2 rounded border border-dark ">
+                                    <i class="fa fa-check filter-size-checkbox__tick text-white"></i>
+                                </span>
+                                <span class="filter-size-label__text">
+                                    M
+                                </span>
+                            </span>
+
+                      <span class="filters-quantity bg-dark rounded-circle text-center text-white">5</span>
+                    </label>
+                  </li>
+
+                  <li class="filter-size-item">
+                    <input type="checkbox" class="default-checkbox size-checkbox" id="m-size-l">
+                    <label for="m-size-l" class="filter-size-label d-flex justify-content-between">
+                            <span class="size-label-inner-wrapper">
+                                <span class="filter-size-checkbox text-center mr-2 rounded border border-dark ">
+                                    <i class="fa fa-check filter-size-checkbox__tick text-white"></i>
+                                </span>
+                                <span class="filter-size-label__text">
+                                    L
+                                </span>
+                            </span>
+
+                      <span class="filters-quantity bg-dark rounded-circle text-center text-white">4</span>
+                    </label>
+                  </li>
+
+                  <li class="filter-size-item">
+                    <input type="checkbox" class="default-checkbox size-checkbox" id="m-size-xl">
+                    <label for="m-size-xl" class="filter-size-label d-flex justify-content-between">
+                            <span class="size-label-inner-wrapper">
+                                <span class="filter-size-checkbox text-center mr-2 rounded border border-dark ">
+                                    <i class="fa fa-check filter-size-checkbox__tick text-white"></i>
+                                </span>
+                                <span class="filter-size-label__text">
+                                    XL
+                                </span>
+                            </span>
+
+                      <span class="filters-quantity bg-dark rounded-circle text-center text-white">7</span>
+                    </label>
+                  </li>
+
+                  <li class="filter-size-item">
+                    <input type="checkbox" class="default-checkbox size-checkbox" id="m-size-xx">
+                    <label for="m-size-xx" class="filter-size-label d-flex justify-content-between">
+                            <span class="size-label-inner-wrapper">
+                                <span class="filter-size-checkbox text-center mr-2 rounded border border-dark ">
+                                    <i class="fa fa-check filter-size-checkbox__tick text-white"></i>
+                                </span>
+                                <span class="filter-size-label__text">
+                                    XX
+                                </span>
+                            </span>
+
+                      <span class="filters-quantity bg-dark rounded-circle text-center text-white">3</span>
+                    </label>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12">
+              <div class="filter-item filter-item--modal">
+                <h3 class="filter-item__heading text-uppercase pb-3 position-relative font-weight-bold">
+                  Filter By Tags
+                </h3>
+
+                <ul class="filter-tags-list d-flex list-unstyled">
+
+
+                  <li class="filter-tags-item">
+                    <input type="checkbox" class="default-checkbox tags-checkbox" id="m-tags-table">
+                    <label for="m-tags-table"
+                           class="filter-tags-label border border-secondary text-secondary position-relative">
+                      <i class="fa fa-tags position-absolute text-secondary filter-tags-label__icon"></i>
+                      <span class="filter-tags-label__text">
+                                Table
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-tags-item">
+                    <input type="checkbox" class="default-checkbox tags-checkbox" id="m-tags-chair">
+                    <label for="m-tags-chair"
+                           class="filter-tags-label border border-secondary text-secondary position-relative">
+                      <i class="fa fa-tags position-absolute text-secondary filter-tags-label__icon"></i>
+                      <span class="filter-tags-label__text">
+                                Chair
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-tags-item">
+                    <input type="checkbox" class="default-checkbox tags-checkbox" id="m-tags-bag">
+                    <label for="m-tags-bag"
+                           class="filter-tags-label border border-secondary text-secondary position-relative">
+                      <i class="fa fa-tags position-absolute text-secondary filter-tags-label__icon"></i>
+                      <span class="filter-tags-label__text">
+                                Hand Bag
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-tags-item">
+                    <input type="checkbox" class="default-checkbox tags-checkbox" id="m-tags-woman">
+                    <label for="m-tags-woman"
+                           class="filter-tags-label border border-secondary text-secondary position-relative">
+                      <i class="fa fa-tags position-absolute text-secondary filter-tags-label__icon"></i>
+                      <span class="filter-tags-label__text">
+                                Woman
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-tags-item">
+                    <input type="checkbox" class="default-checkbox tags-checkbox" id="m-tags-fashion">
+                    <label for="m-tags-fashion"
+                           class="filter-tags-label border border-secondary text-secondary position-relative">
+                      <i class="fa fa-tags position-absolute text-secondary filter-tags-label__icon"></i>
+                      <span class="filter-tags-label__text">
+                                Fashion
+                            </span>
+                    </label>
+                  </li>
+
+                  <li class="filter-tags-item">
+                    <input type="checkbox" class="default-checkbox tags-checkbox" id="m-tags-clothes">
+                    <label for="m-tags-clothes"
+                           class="filter-tags-label border border-secondary text-secondary position-relative">
+                      <i class="fa fa-tags position-absolute text-secondary filter-tags-label__icon"></i>
+                      <span class="filter-tags-label__text">
+                                Clothes
+                            </span>
+                    </label>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>

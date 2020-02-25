@@ -1,0 +1,28 @@
+.square-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 37px;
+	height: 37px;
+	border: 1px solid black;
+	background-color: white;
+	font-size: 18px;
+}
+
+
+.modal-close {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 0;
+	right: 0;
+	font-size: 25px;
+	font-weight: bold;
+	width: 38px;
+	height: 38px;
+
+	& span {
+		line-height: 25px;
+	}
+}
+
